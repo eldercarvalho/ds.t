@@ -1,5 +1,5 @@
 import React from 'react'
-import { Spacing, SpacingType } from '@ds.t/foundation'
+import { SpacingType } from '@ds.t/foundation'
 
 export type MarginProps = {
   all?: SpacingType
