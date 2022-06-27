@@ -1,0 +1,22 @@
+@import "foundation/all";
+
+@each $size,
+$value in $spacing {
+  .dse-width-#{$size} {
+    width: #{$value};
+  }
+}
+
+@each $size,
+$value in $spacing {
+  .dse-height-#{$size} {
+    height: #{$value};
+  }
+}
+
+@each $size,
+$value in $fs {
+  .dse-text-#{$size} {
+    font-size: #{$value};
+  }
+}
