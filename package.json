@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "yarn lerna run build",
+    "dev": "yarn lerna run dev",
+    "test": "yarn lerna run test",
+    "publish": "yarn test && yarn build && yarn lerna publish",
+    "commit": "yarn git-cz"
+  },
   "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "lerna": "^5.1.4"
   },
   "private": true,
@@ -12,12 +21,13 @@
       "packages/*",
       "playgrounds/*"
     ],
-    "nohoist": ["**/normalize-scss"]
+    "nohoist": [
+      "**/normalize-scss"
+    ]
   },
-  "scripts": {
-    "build": "yarn lerna run build",
-    "dev": "yarn lerna run dev",
-    "test": "yarn lerna run test",
-    "publish": "yarn test && yarn build && yarn lerna publish"
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
