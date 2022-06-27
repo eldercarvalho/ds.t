@@ -1,9 +1,7 @@
 import React from 'react'
-import { Spacing } from '@ds.t/foundation'
+import { Spacing, SpacingType } from '@ds.t/foundation'
 
-type SpacingType = keyof typeof Spacing
-
-type ColorProps = {
+export type ColorProps = {
   hexCode: string
   width?: SpacingType
   height?: SpacingType

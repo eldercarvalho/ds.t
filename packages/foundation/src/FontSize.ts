@@ -6,4 +6,6 @@ const fontSizes =  {
   xl: 'xl',
 }
 
+export type FontSizeType = keyof typeof fontSizes
+
 export default Object.freeze(fontSizes)

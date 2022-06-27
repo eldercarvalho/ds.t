@@ -20,4 +20,6 @@ const spaces = {
   // 96px
 }
 
+export type SpacingType = keyof typeof spaces
+
 export default Object.freeze(spaces)

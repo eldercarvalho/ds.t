@@ -1,14 +1,12 @@
 import React from 'react'
-import { FontSize } from '@ds.t/foundation'
+import { FontSize, FontSizeType } from '@ds.t/foundation'
 
-type FontSizesType = keyof typeof FontSize
-
-type TextProps = {
-  size?: FontSizesType,
+export type TextProps = {
+  size?: FontSizeType,
   children: React.ReactNode,
 }
 
-const Text = ({ size = FontSize.base as FontSizesType, children}: TextProps) => {
+const Text = ({ size = FontSize.base as FontSizeType, children}: TextProps) => {
   const className = `dse-text dse-text-${size}`
 
   return <p className={className}>{children}</p>;

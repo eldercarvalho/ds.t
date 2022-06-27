@@ -1,9 +1,7 @@
 import React from 'react'
-import { Spacing } from '@ds.t/foundation'
+import { Spacing, SpacingType } from '@ds.t/foundation'
 
-type SpacingType = keyof typeof Spacing;
-
-type MarginProps = {
+export type MarginProps = {
   all?: SpacingType
   top?: SpacingType
   right?: SpacingType
