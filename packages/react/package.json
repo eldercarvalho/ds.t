@@ -21,6 +21,7 @@
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
     "@babel/preset-typescript": "^7.17.12",
+    "@ds.t/foundation": "0.5.1",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
