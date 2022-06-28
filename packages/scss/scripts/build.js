@@ -2,6 +2,8 @@ const Fs = require('fs')
 const Path = require('path')
 const Sass = require('node-sass')
 
+const LIB_PATH = Path.resolve('lib')
+
 const getComponents = () => {
   let allComponents = []
   const types = ['atoms', 'molecules', 'organisms']
@@ -34,6 +36,11 @@ const compile = (path, fileName) => {
     result.css.toString()
   )
 }
+
+if (!Fs.existsSync(LIB_PATH)) {
+  Fs.mkdirSync(LIB_PATH)
+}
+
 
 compile('src/global.scss', 'lib/global.css')
 
